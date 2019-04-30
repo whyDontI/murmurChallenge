@@ -1,0 +1,20 @@
+<!-- <div class="row"> -->
+<h1><span class="badge badge-secondary">Popular</span></h1>
+<div class="form-group">
+	<input  [(ngModel)]="searchTerm" class="form-control mr-sm-2" type="search" placeholder="Search title" aria-label="Search">
+</div>
+	<div class="card m-1" *ngFor="let item of articles | search : searchTerm">
+		<!-- <div class="col">
+			<img src="" alt="">
+		</div>
+		<div class="col"> -->
+			<h5 class="card-header">{{item.author}}</h5>
+			<div class="card-body">
+				<h5 class="card-title">{{item.title}}</h5>
+				<p class="card-text">{{item.description}}</p>
+				<a href="{{item.url}}" target="_blank" class="btn btn-primary">Read more</a>
+			</div>
+		<!-- </div> -->
+	</div>
+
+<!-- </div> -->

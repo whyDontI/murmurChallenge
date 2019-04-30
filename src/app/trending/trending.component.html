@@ -1,0 +1,27 @@
+<h1><span class="badge badge-secondary">All</span></h1>
+<div class="form-group">
+	<input  [(ngModel)]="searchTerm" class="form-control mr-sm-2" type="search" placeholder="Search title" aria-label="Search">
+</div>
+<div class="row">
+    <div class="flip-card col-sm-6 mb-1" *ngFor="let item of articles | search : searchTerm">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+
+                    <img class="card-img-top" src="{{item.urlToImage}}" style="width:100%;">
+
+             </div>
+            <div class="flip-card-back">
+                <div class="card">
+                    <h5 class="card-header">{{item.author}}</h5>
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">{{item.title}}</h5>
+                        <p class="card-text text-dark">{{item.description | slice:0:30 }}...</p>
+                        <a href="{{item.url}}" target="_blank" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
