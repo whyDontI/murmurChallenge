@@ -9,35 +9,169 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="./assets/style.css">
 
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-			<a class="navbar-brand" href="#">News API</a>
-			<form class="form-inline my-2 my-lg-0">
-			<!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-			<!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-			</form>
-		</div>
-	</nav>
-	<div class="container">
+
+	<!-- Preloader -->
+	<!-- <div class="preloader d-flex align-items-center justify-content-center">
+			<div class="lds-ellipsis">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+			</div>
+	</div> -->
+
+	    <!-- ##### Header Area Start ##### -->
+			<header class="header-area">
+					<!-- Top Header Area -->
+					<div class="top-header-area">
+							<div class="container">
+									<div class="row align-items-center">
+											<div class="col-12 col-md-6">
+											</div>
+											<div class="col-12 col-md-6">
+													<div class="top-meta-data d-flex align-items-center justify-content-end">
+															<!-- Top Social Info -->
+															<div class="top-social-info">
+																	<a href="#"><i class="fa fa-facebook"></i></a>
+																	<a href="#"><i class="fa fa-twitter"></i></a>
+																	<a href="#"><i class="fa fa-pinterest"></i></a>
+																	<a href="#"><i class="fa fa-linkedin"></i></a>
+																	<a href="#"><i class="fa fa-youtube-play"></i></a>
+															</div>
+															<!-- Top Search Area -->
+															<div class="top-search-area">
+																	<form action="index.html" method="post">
+																			<!-- <input type="search" name="top-search" id="topSearch" placeholder="Search..."> -->
+																			<!-- <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button> -->
+																	</form>
+															</div>
+															<!-- Login -->
+															<a href="login.html" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
+													</div>
+											</div>
+									</div>
+							</div>
+					</div>
+	
+					<!-- Navbar Area -->
+					<div class="vizew-main-menu" id="sticker">
+							<div class="classy-nav-container breakpoint-off">
+									<div class="container">
+	
+											<!-- Menu -->
+											<nav class="classy-navbar justify-content-between" id="vizewNav">
+	
+												 <!-- Nav brand -->
+												 <a href="index.html" class="nav-brand"><img src="https://murmurdapp.com/assets/img/murmur_copy.png" style="height:40px"></a>
+
+													<!-- Navbar Toggler -->
+													<div class="classy-navbar-toggler">
+															<span class="navbarToggler"><span></span><span></span><span></span></span>
+													</div>
+	
+													<div class="classy-menu">
+	
+															<!-- Close Button -->
+															<div class="classycloseIcon">
+																	<div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+															</div>
+	
+															<!-- Nav Start -->
+															<div class="classynav">
+																	<ul>
+																			<li class="active"><a href="#">Home</a></li>
+																	</ul>
+															</div>
+															<!-- Nav End -->
+													</div>
+											</nav>
+									</div>
+							</div>
+					</div>
+			</header>
+			<!-- ##### Header Area End ##### -->
 		<app-root></app-root>
-	</div>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script>
-	$(document).ready(function(){
-		$('.carousel').carousel('cycle');
-	});
-</script>
-</body>
+<!-- ##### Footer Area Start ##### -->
+<footer class="footer-area">
+		<div class="container">
+				<div class="row">
+
+						<!-- Footer Widget Area -->
+						<div class="col-12 col-sm-6 col-xl-3">
+								<div class="footer-widget mb-70">
+										<!-- Logo -->
+										<a href="#" class="foo-logo d-block mb-4"><img src="https://murmurdapp.com/assets/img/murmur_new.png" alt=""></a>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+										<!-- Footer Newsletter Area -->
+										<div class="footer-nl-area">
+												<form action="#" method="post">
+														<input type="email" name="nl-email" class="form-control" id="nlEmail" placeholder="Your email">
+														<button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+												</form>
+										</div>
+								</div>
+						</div>
+
+						<!-- Footer Widget Area -->
+						<div class="col-12 col-sm-6 col-xl-3">
+								<div class="footer-widget mb-70">
+										<h6 class="widget-title">Our Address</h6>
+										<!-- Contact Address -->
+										<div class="contact-address">
+												<p>420 E 69th St, Qwerty Qwerty, <br>IN 46312, India</p>
+												<p>Phone: 9999999999</p>
+												<p>Email: dont-worry@gmail.com</p>
+										</div>
+										<!-- Footer Social Area -->
+										<div class="footer-social-area">
+												<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+												<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+												<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+												<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+												<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+
+		<!-- Copywrite Area -->
+		<div class="copywrite-area">
+				<div class="container">
+						<div class="row align-items-center">
+						</div>
+								<div class="col-12 col-sm-6">
+										<nav class="footer-nav">
+												<ul>
+														<li><a href="#">Advertise</a></li>
+														<li><a href="#">About</a></li>
+														<li><a href="#">Contact</a></li>
+														<li><a href="#">Disclaimer</a></li>
+														<li><a href="#">Privacy</a></li>
+												</ul>
+										</nav>
+								</div>
+						</div>
+				</div>
+		</div>
+</footer>
+<!-- ##### Footer Area End ##### -->
+
+<!-- ##### All Javascript Script ##### -->
+<!-- jQuery-2.2.4 js -->
+<script src="assets/js/jquery/jquery-2.2.4.min.js"></script>
+<!-- Popper js -->
+<script src="assets/js/bootstrap/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+<!-- All Plugassets/ins js -->
+<script src="assets/js/plugins/plugins.js"></script>
+<!-- Active js -->
+<script src="assets/js/active.js"></script></body>
 </html>

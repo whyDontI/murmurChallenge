@@ -13,13 +13,13 @@ export class DataService {
   headlines: news;
 
   // URL
-  headlinesUrl = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=f7300254e58447a38f70edab2aeda744&pageSize=10';
+  headlinesUrl = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=f7300254e58447a38f70edab2aeda744&pageSize=';
 
   allNewsUrl = 'https://newsapi.org/v2/everything?q=bitcoin&apiKey=f7300254e58447a38f70edab2aeda744';
   constructor(private http: HttpClient) { }
 
-  getHeadlines(): Observable<news>{
-    return this.http.get<news>(this.headlinesUrl, { observe: 'response'})
+  getHeadlines(limit: number): Observable<news>{
+    return this.http.get<news>(this.headlinesUrl + limit, { observe: 'response'})
     .pipe(
       map(response => response.body)
     );

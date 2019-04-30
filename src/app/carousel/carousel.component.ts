@@ -16,7 +16,7 @@ export class CarouselComponent implements OnInit {
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.data.getHeadlines().subscribe((res: news) => {
+    this.data.getHeadlines(5).subscribe((res: news) => {
       this.articles = res.articles;
     });
   }

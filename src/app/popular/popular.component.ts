@@ -18,7 +18,7 @@ export class PopularComponent implements OnInit {
   constructor(private data: DataService) { }
 
   ngOnInit() {
-    this.data.getHeadlines().subscribe((res: news) => {
+    this.data.getHeadlines(3).subscribe((res: news) => {
       this.articles = res.articles;
     });
     // this.popularHeadlines = this.data.headlines;
